@@ -1,5 +1,5 @@
 ##Author: Ebrain Mirambeau
-##Purpose: Calculator 
+##Purpose: Calculator interpreter (Ruby)
 
 class Token
 	attr_accessor :kind, :value

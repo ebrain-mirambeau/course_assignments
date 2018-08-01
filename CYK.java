@@ -1,10 +1,8 @@
 /* 
  * CYK algorithm for Context Free Language
- * Author: Chenguang Zhu
- * CS154, Stanford University
+ * Authors: Chenguang Zhu and Ebrain Mirambeau
  */
 
-//This is a possible solution
 
 import java.io.*;
 

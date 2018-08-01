@@ -1,7 +1,6 @@
 /* 
  * Converting regular expression into Epsilon-NFA
- * Author: Chenguang Zhu
- * CS154, Stanford University
+ * Authors: Chenguang Zhu and Ebrain Mirambeau
  */
 
 import java.io.*;

@@ -1,3 +1,6 @@
+#Author: Ebrain Mirambeau
+#Purpose: k-medoids algorithm
+
 import math
 
 f = open('/Users/ebrain_mirambeau/Desktop/vectors')

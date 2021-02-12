@@ -1,0 +1,63 @@
+1    //What does line 2 do? 
+	 //An array of colors is initialized
+2    colors = ["red", "blue", "yellow", "violet", "green"]; 
+3     
+4    //What is line 5 output?
+	 //red
+5    console.log(colors[0]) 
+6     
+7    //What is line 8 output?
+	 //yellow
+8    console.log(colors[2]) 
+9     
+10   //Explain the next two lines. 
+	 //colors[4] which contains "green" is replaced by "ultraviolet" and printed out to console
+11   colors[4] = "ultraviolet"; 
+12   console.log(colors) 
+13    
+14   //Explain the next three lines.
+	 //"violet" replaced by fourthColor and fourthColor is printed out. fourthColor
+	 //is not a string
+15   fourthColor = "violet"; 
+16   colors[3] = fourthColor; 
+17   console.log(colors); 
+18    
+19   //Explain te below two lines. 
+     // '("pink")' is added to end of the array
+20   colors[5] = ("pink"); 
+21   console.log(colors); 
+22    
+23   //What is .unshift()
+     //.unshift adds contents to the beginning of the array 
+     //"white is added to the beginning of the array	 
+24   colors.unshift("white"); 
+25   console.log(colors); 
+26    
+27   //What is .length property? 
+     // 6 will be printed out
+28   console.log(colors.length) 
+29    
+30    
+31   //What does pop() do? 
+     // pop() removes the last element of the array
+32   colors.pop();
+     // 5 will be printed out to the console 
+33   console.log(colors.length) 
+34    
+35   //Explain the below two for loops 
+     //This loop prints out each of the cells of the array
+	 //The following loop prints out the cell number along with its contents
+36   for (var i = 0; i < colors.length; i++) { 
+37       console.log(colors[i]); 
+38   } 
+39    
+40    
+41   for (var i = 0; i < colors.length; i++) { 
+42       console.log(i + ": " + colors[i]); 
+43   } 
+44    
+45   //What is line 48 output? 
+     //"green" is output
+46   var len = colors.length - 1 
+47   var lastColor = colors[len] 
+48   console.log(lastColor) 

@@ -1,0 +1,107 @@
+1. JavaScript got its name as a result of a co-marketing deal between Netscape and Sun, in exchange for Netscape bundling Sun's Java runtime with their browser. Originally, it was named called Mocha, then renamed to LiveScript; finally, it was renamed to JavaScript.
+
+2. false
+
+3. dNaNtest
+
+4. medium
+
+5. 
+for (n = 1; n <= 20; n = n+1){
+	if (n % 2 == 0){
+		console.log(n)
+	}
+}
+
+
+https://www.facebook.com/DJNICE140/videos/10219788010143150/
+
+var list = {
+  value: "a",
+  next: {
+    value: "b",
+    next: {
+      value: "c",
+      next: undefined
+    }
+  }
+};
+
+var list = {value: "a", next: { value: "b", next: { value: "c", next: undefined } } };
+
+function reverseListIntoString(list){
+let arr = [];
+while(list != undefined){
+    console.log(list.value);
+    if (list != undefined){
+       arr.push(list.value);
+    }   
+    list = list.next;
+};
+
+let i = arr.length;
+rarr = [];
+
+while(i >= 0){
+    rarr.push(arr[i]);
+    i = i - 1;
+}
+
+rword = rarr.join("");
+return rword;
+}
+
+/////////////////////////////////////////
+function prepend(value, list) {
+  return {value, rest: list};
+}
+
+function arrayToList(array) {
+  let list = null;
+  for (let i = array.length - 1; i >= 0; i--) {
+    list = {value: array[i], rest: list};
+  }
+  return list;
+}
+
+
+
+/////////////////////////////////////////
+
+function reverseListIntoString(list){
+let arr = [];
+while(list != undefined){
+    console.log(list.value);
+    if (list != undefined){
+    	arr.push(list.value);
+    }
+    list = list.next;
+}	
+
+let i = arr.length;
+rarr = [];
+
+while(i >= 0){
+    rarr.push(arr[i]);
+    i = i - 1;
+}
+
+var x = arrayToList(rarr);
+x = prepend(arr.join(""), x);
+return x;
+}
+
+
+/////////////////////////////////////////
+
+function reverseListIntoString(list){
+let arr = [];
+let x = list;
+while(list != undefined){
+    arr.push(list.value);
+    prepend(list.value, x);
+    list = list.next;
+}	
+prepend(arr.join(""), x);
+return x;
+}

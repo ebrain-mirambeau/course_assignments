@@ -1,0 +1,14 @@
+1. JavaScript got its name as a result of a co-marketing deal between Netscape and Sun, in exchange for Netscape bundling Sun's Java runtime with their browser. Originally, it was named called Mocha, then renamed to LiveScript; finally, it was renamed to JavaScript.
+
+2. false
+
+3. dNaNtest
+
+4. medium
+
+5. 
+for (n = 1; n <= 20; n = n+1){
+	if (n % 2 == 0){
+		console.log(n)
+	}
+}
